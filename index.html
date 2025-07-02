@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday, Taki!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Click sound -->
+  <audio id="click-sound" src="click.mp3" preload="auto"></audio>
+
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <div class="slides">
+    <!-- slide0 -->
+    <div class="slide visible" id="slide0">
+      <p>Loading your birthday surprise...</p>
+    </div>
+    <div class="slide" id="slide1">
+      <h1 class="typewriter sparkles">🎂 Happy Birthday, Taki! 🎉</h1>
+      <p>You're not just a year older, you're a year cooler, weirder, and more dangerously cute.</p>
+      <p>From memes to memories, you're irreplaceable 💖</p>
+    </div>
+    <div class="slide" id="slide1.5"><h1 class="sparkles">But</h1></div>
+    <!-- Slide 2: Things I'd Replace You With -->
+    <div class="slide" id="slide2"><h1 class="sparkles">Things I Would Still Replace You With</h1></div>
+    <div class="slide" id="slide3"><h2>nothing</h2></div>
+    <div class="slide" id="slide4"><h2>except Chonki</h2></div>
+    <div class="slide" id="slide5"><p>This is Chonki:</p><img src="cat.jpg" alt="Chonki the cat" /></div>
+    <div class="slide" id="slide6"><h2>just kidding</h2></div>
+    <div class="slide" id="slide7"><h2 class="sparkles">I wouldn't replace you for anything.</h2><img src="image.jpg" alt="Special memory image" /></div>
+    <!-- Quiz Intro -->
+    <div class="slide" id="slide8"><h1 class="sparkles">Ekhon Mcq porikkha De</h1></div>
+  </div>
+
+  <div class="nav-buttons" id="navBtns">
+    <button id="prevBtn" onclick="prevSlide()">Previous</button>
+    <button id="nextBtn" onclick="nextSlide()">Next</button>
+  </div>
+
+  <!-- Firebase UMD SDK (v8) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
