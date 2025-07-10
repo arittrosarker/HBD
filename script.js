@@ -67,10 +67,10 @@ slidesContainer.appendChild(scoreSlide);
 
 // Final text slide
 const finalTextSlide = document.createElement('div');
-finalTextSlide.classList.add('slide'); finalTextSlide.id = 'final-text-slide';
+finalTextSlide.classList.add('slide', 'tall-slide'); finalTextSlide.id = 'final-text-slide';
 finalTextSlide.innerHTML = `
   <p>prio bondhu taki,</p>
-  <p>jonmodiner shuveccha! dekhte dekhte ekti bochor par hoye gelo. tor biyer boyosh hoye gelo.</p>
+  <p>jonmodiner shuveccha! dekhte dekhte ekti bochor par hoye gelo. tor biyer boyosh hoye gelo.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
   <p>iti,</p>
   <p>tor oprio bondhu</p>
   <p>arittro</p>
@@ -121,7 +121,7 @@ function updateProgress() {
   nextBtn.style.visibility = currentSlide === 0 ? 'hidden' : 'visible';
   const pct = (currentSlide / (slides.length - 1)) * 100;
   document.getElementById('progress-bar').style.width = pct + '%';
-  document.body.style.background = bgColors[currentSlide % bgColors.length];
+document.getElementById('bg-overlay').style.background = bgColors[currentSlide % bgColors.length];
 }
 
 function showSlide(index) {
@@ -131,7 +131,14 @@ function showSlide(index) {
   currentSlide = index;
   slides[currentSlide].classList.remove('exit-left');
   slides[currentSlide].classList.add('visible');
+  
   updateProgress();
+  if (slides[currentSlide].classList.contains('tall-slide')) {
+  document.body.classList.add('show-scroll');
+} else {
+  document.body.classList.remove('show-scroll');
+}
+
 
   // score-text on score slide
   if (slides[currentSlide].id === 'score-slide') {
@@ -150,6 +157,7 @@ function showSlide(index) {
 
 function nextSlide() {
   // quiz answer guard
+  clickSound.play();
   if (slides[currentSlide].classList.contains('quiz-slide') &&
       slides[currentSlide].dataset.answered === 'false') {
     return alert('Please select an answer first!');
@@ -157,9 +165,9 @@ function nextSlide() {
   showSlide(currentSlide + 1);
 }
 function prevSlide() {
+  clickSound.play();
   showSlide(currentSlide - 1);
 }
-
 window.addEventListener('load', () => {
   setTimeout(() => showSlide(1), 3000);
   updateProgress();
