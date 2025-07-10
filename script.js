@@ -81,7 +81,7 @@ slidesContainer.appendChild(finalTextSlide);
 const wishSlide = document.createElement('div');
 wishSlide.classList.add('slide'); wishSlide.id = 'wish-slide';
 wishSlide.innerHTML = `
-  <h2>Any birthday wish you’d like from me?</h2>
+  <h2>Tor amar kache kono birthday wish thakle lekhte parish</h2>
   <textarea id="wish-input" placeholder="Type your wish here…"></textarea>
   <button id="send-wish-btn">Send</button>
   <p id="wish-confirm" style="margin-top:15px;"></p>
