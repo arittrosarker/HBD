@@ -70,7 +70,16 @@ const finalTextSlide = document.createElement('div');
 finalTextSlide.classList.add('slide', 'tall-slide'); finalTextSlide.id = 'final-text-slide';
 finalTextSlide.innerHTML = `
   <p>prio bondhu maisha,</p>
-  <p>jonmodiner shuveccha! dekhte dekhte ekti bochor par hoye gelo. tor biyer boyosh hoye gelo.</p>
+  <p>jonmodiner shuveccha! dekhte dekhte ekti bochor par hoye gelo. tor biyer boyosh hoye gelo.
+  Happy Birthday!
+toke chinar por eta ditio 12 July, gotobar toke chintam na thik moto.agei bollam amar ebar handmade gift parcel kore deyar iccha silo, but oita jehutu shomvob na tai eita banaisi, janina pochondo hoise naki kintu er beshi r parina. eita banano start korsilam april 13 te, 2week kaj kore rekhe disilam, bakita may te ektu ektu korsi, r year finaler por. eto kisu lekte mon chaitese je koi theke shuru korbo bujhtesina, tao shuru kori.
+prothomei dhonnobad aunty o uncle ke, tara na thakle aj ami eirokom ekti dosto petam na. erpore dhonnobad Mark Zuckerberg ke Facebook abishkar korar jonno.
+amra irl frens na kintu amar ashe pasher shob manusher theke ami tor bepare beshi jani r tuio janish. amra eto valo pasher bashar aunty hobo 1 bochor age vabio nai.ami loke ki bolbe eita niye onek chinta kori, kintu tui adaloter judge hoye geleo toke kisu bolte apotti hobena, jodio jani tui judge kore amar nam e ki ki vabbi tao😭🙏. Amader onek bar e genjam lagse, kintu upor wala o tor doyay shob bar e mite gese. Thank you for not giving up on me and please don't😞 majhe majhe matha thik thakena.tor theke ami heart r pranir srenibinnash charao r o onek kichu shikhsi. ami ager theke better manush hoyechi, character develop bole monehoy english e. nijer vul bujha shikhsi hoyto ektu hoileo,age r o worst chilam.
+tui amader frenship ke majhe majhei appreciate korish kintu ami directly temon ekta korini, r ekhon jodi ami shamne boshe thaktam, taile uporer kisu o bolte partam na, chup kore jutar dike takay boshe thaktam, r shamne cold coffeer cup thakle hoyto pipe diye ektu ektu kore khaitam.
+amake er age keo kokhono bestie bff eidhoroner kichu bolenai, to tui jokhon oi type caption er reels dish emotional hoye jai🥲. dhonnobad amake ei upadhi deyar jonno, means a lot. ami janina ami ei upadhir joggo kina tao.
+Porashona niye tension kor kintu kanna kati korishna dost, tui ekhon consistent asish, eita onek kichu, nijer progress celebrate kor taile dekbi motivated lagtese, toke academic advice deyar moto result amar nai kintu manoshik support to ditei pari. Retake ta diye fresh mind niye porte thak, 6 mashe e hoye jbe shesh syllabus, r oi apur kothay demotivate hoish na, unare bolish ami unar motamoter shathe shohomot na.
+We highlight the important parts of our books, you are one of the things I highlighted in my not so big lyf. I appreciate your existence, may I die before you.
+</p>
   <p>iti,</p>
   <p>tor oprio bondhu</p>
   <p>arittro</p> 
