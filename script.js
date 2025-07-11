@@ -69,11 +69,13 @@ slidesContainer.appendChild(scoreSlide);
 const finalTextSlide = document.createElement('div');
 finalTextSlide.classList.add('slide', 'tall-slide'); finalTextSlide.id = 'final-text-slide';
 finalTextSlide.innerHTML = `
-  <p>prio bondhu taki,</p>
-  <p>jonmodiner shuveccha! dekhte dekhte ekti bochor par hoye gelo. tor biyer boyosh hoye gelo.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+  <p>prio bondhu maisha,</p>
+  <p>jonmodiner shuveccha! dekhte dekhte ekti bochor par hoye gelo. tor biyer boyosh hoye gelo.</p>
   <p>iti,</p>
   <p>tor oprio bondhu</p>
-  <p>arittro</p> <br> <br>
+  <p>arittro</p> 
+  <img src="heart.png" alt="heart" align="center">
+  <br> <br>
 `;
 slidesContainer.appendChild(finalTextSlide);
 
@@ -81,7 +83,7 @@ slidesContainer.appendChild(finalTextSlide);
 const wishSlide = document.createElement('div');
 wishSlide.classList.add('slide'); wishSlide.id = 'wish-slide';
 wishSlide.innerHTML = `
-  <h2>Tor amar kache kono birthday wish thakle lekhte parish</h2>
+  <h2>Tor kono birthday wish thakle lekhte parish</h2>
   <textarea id="wish-input" placeholder="Type your wish here…"></textarea>
   <button id="send-wish-btn">Send</button>
   <p id="wish-confirm" style="margin-top:15px;"></p>
